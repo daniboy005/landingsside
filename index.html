@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <link rel="stylesheet" href="styles.css" />
+ <title>FEEL</title>
+</head>
+<body>
+<header>
+ <h1 id="heroOverskrift">FEEL</h1>
+ <select id="sprakValg" onchange="endreSprak()">
+ <option value="no">Norsk</option>
+ <option value="en">Engelsk</option>
+ <option value="fr">Fransk</option>
+ <option value="is">Islandsk</option>
+ <!-- Legg til flere språk etter behov -->
+ </select>
+ </header>
+
+ <main>
+ <section id="hero">
+ <h2 id="heroOverskrift">Velkommen til Endre språk - Example</h2>
+ <p id="heroTekst">
+ Vi leverer skreddersydde webdesignløsninger som er tilgjengelige for alle.
+ </p>
+ <a href="#produkter" class="cta-button" id="seVareProdukter">Se våre produkter</a>
+ </section>
+
+ <section id="produkter">
+ <h2 id="produkterOverskrift">Våre produkter</h2>
+ <ul>
+ <li><a href="#" id="nettsideWordpress">Nettside i Wordpress</a></li>
+ <li><a href="#" id="driftNettside">Drift av nettside</a></li>
+ <li><a href="#" id="strategiskKommunikasjon">Strategisk kommunikasjon</a></li>
+ <li><a href="#" id="systemdokumentasjon">Systemdokumentasjon</a></li>
+ <li><a href="#" id="nettpresentasjoner">Nettpresentasjoner</a></li>
+ <li><a href="#" id="nettvideoSosialeMedier">Nettvideo til sosiale medier</a></li>
+ </ul>
+ </section>
+
+ <section id="forstor">
+ <h2 id="forstorOverskrift">Forstør/minsk tekst</h2>
+ <p id="forstorTekst">
+ Her kan du legge til tekst og eventuelt implementere funksjonalitet for å forstørre eller forminske tekststørrelsen.
+ </p>
+ <button id="forstor-knapp" onclick="endreTekstStorrelse(1)">Forstør</button>
+ <button id="forminsk-knapp" onclick="endreTekstStorrelse(-1)">Forminsk</button>
+ </section>
+ </main>
+
+ <footer>
+ <p id="footerTekst">
+ &copy; 2023 Endre språk - Example. Alle rettigheter reservert.
+ </p>
+ </footer>
+
+<script src="språk.js"></script>
+</body>
+</html>
